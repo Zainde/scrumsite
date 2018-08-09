@@ -1,20 +1,13 @@
-/* Insert all the styles */
-
-.shadow {
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-}
-
 h1, h2, h3, h4, h5, h6{
   text-transform: uppercase;
 }
-
 
 p{
   text-transform: lowercase;
 }
 
 section{
-  background-color: lightgrey;
+  background-color: #eee;
   padding: 16px;
 }
 
@@ -25,4 +18,30 @@ body{
 }
 body header{
   grid-column: span 2;
+}
+
+section:nth-of-type(2n+1){
+  background-color:black;
+  color: white;
+}
+
+section article{
+  padding: 10px;
+}
+section:nth-of-type(2n+1) article article:nth-of-type(2n+1){
+  background-color: #ddd;
+  color: black;
+}
+section article article:nth-of-type(2n+1){
+  background-color: black;
+  color: white;
+}
+
+@media only screen and (max-width: 992px) {
+  body{
+    grid-template-columns:1fr;
+  }
+  body header{
+    grid-column: span 1;
+  }
 }

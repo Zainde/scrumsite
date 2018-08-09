@@ -1,1 +1,28 @@
-this is for css
+/* Insert all the styles */
+
+.shadow {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+h1, h2, h3, h4, h5, h6{
+  text-transform: uppercase;
+}
+
+
+p{
+  text-transform: lowercase;
+}
+
+section{
+  background-color: lightgrey;
+  padding: 16px;
+}
+
+body{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 16px;
+}
+body header{
+  grid-column: span 2;
+}

@@ -36,7 +36,7 @@ section article article:nth-of-type(2n+1){
   background-color: black;
   color: white;
 }
-section:nth-of-type(2n+1) a:visited{
+footer a:visited, footer a{
   color: #ddd;
 }
 @media only screen and (max-width: 992px) {
